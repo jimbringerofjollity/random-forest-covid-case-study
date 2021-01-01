@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal length (cm) <= 2.6\ngini = 0.66\nsamples = 98\nvalue = [54, 58, 38]\nclass = versicolor", fillcolor="#f7fefa"] ;
+1 [label="gini = 0.0\nsamples = 33\nvalue = [54, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\ngini = 0.48\nsamples = 65\nvalue = [0, 58, 38]\nclass = versicolor", fillcolor="#bbf6d4"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal width (cm) <= 1.35\ngini = 0.07\nsamples = 35\nvalue = [0, 57, 2]\nclass = versicolor", fillcolor="#40e685"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 18\nvalue = [0, 29, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label="sepal length (cm) <= 6.15\ngini = 0.12\nsamples = 17\nvalue = [0, 28, 2]\nclass = versicolor", fillcolor="#47e78a"] ;
+3 -> 5 ;
+6 [label="petal length (cm) <= 4.85\ngini = 0.26\nsamples = 7\nvalue = [0, 11, 2]\nclass = versicolor", fillcolor="#5dea98"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 5\nvalue = [0, 11, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 10\nvalue = [0, 17, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+5 -> 9 ;
+10 [label="petal width (cm) <= 1.85\ngini = 0.05\nsamples = 30\nvalue = [0, 1, 36]\nclass = virginica", fillcolor="#843ee6"] ;
+2 -> 10 ;
+11 [label="petal length (cm) <= 4.85\ngini = 0.2\nsamples = 7\nvalue = [0, 1, 8]\nclass = virginica", fillcolor="#9152e8"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 6\nvalue = [0, 0, 8]\nclass = virginica", fillcolor="#8139e5"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 23\nvalue = [0, 0, 28]\nclass = virginica", fillcolor="#8139e5"] ;
+10 -> 14 ;
+}
